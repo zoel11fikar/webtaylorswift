@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Input</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="registrationForm">
+        <h1>input</h1>
+        <label for="name">Nama:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="registrationCode">Kode Registrasi:</label>
+        <select id="registrationCode" name="registrationCode" required>
+            <option value="2022HK103">2022HK103</option>
+            <option value="2023TI114">2023TI114</option>
+            <option value="2021MI005">2021MI005</option>
+            <option value="2022TI231">2022TI231</option>
+        </select>
+
+        <label for="courseCode">Kode Mata Kuliah:</label>
+        <select id="courseCode" name="courseCode" required>
+            <option value="MKDV2">MKDV2</option>
+            <option value="MKPI2">MKPI2</option>
+            <option value="MKIN3">MKIN3</option>
+        </select>
+
+        <button type="button" onclick="submitForm()">Kirim</button>
+        <button type="reset">Hapus</button>
+    </form>
+
+    <div id="output">
+        <h1>Output</h1>
+        <div class="hasil">
+            <pre>
+                Nama                : <span id="outputName"></span>
+                Jurusan             : <span id="outputJurusan"></span>
+                No.Urut             : <span id="outputNoUrut"></span>
+                Mata Kuliah         : <span id="outputMataKuliah"></span>
+            </pre>
+            <pre>
+                Kode Registrasi     : <span id="outputKodeRegistrasi"></span>
+                Angkatan            : <span id="outputAngkatan"></span>
+                Kode Mata Kuliah    : <span id="outputKodeMataKuliah"></span>
+                SKS                 : <span id="outputSKS"></span>
+            </pre>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
